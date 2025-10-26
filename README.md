@@ -1,5 +1,4 @@
 # Passwall
-[![visitor badge](https://img.shields.io/badge/Chat%20on-Telegram-blue.svg)](https://t.me/AmirHosseinTSL) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 # How to install Passwall + Xray & Sing-Box on openwrt
 
 
@@ -19,7 +18,7 @@
 
 Run this command in openwrt remote ssh
 ```
-rm -f passwallx.sh && wget https://raw.githubusercontent.com/amirhosseinchoghaei/Passwall/main/passwallx.sh && chmod 777 passwallx.sh && sh passwallx.sh
+rm -f passwallx.sh && wget https://raw.githubusercontent.com/gravegrow/Passwall/main/passwallx.sh && chmod 777 passwallx.sh && sh passwallx.sh
 ```
 Done !
 

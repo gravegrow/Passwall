@@ -16,7 +16,7 @@ echo "Running as root..."
 sleep 2
 clear
 
-uci set system.@system[0].zonename='Asia/Tehran'
+uci set system.@system[0].zonename='Europe/Moscow'
 
 uci set network.wan.peerdns="0"
 
@@ -26,7 +26,7 @@ uci set network.wan.dns='1.1.1.1'
 
 uci set network.wan6.dns='2001:4860:4860::8888'
 
-uci set system.@system[0].timezone='<+0330>-3:30'
+uci set system.@system[0].timezone='MSK-4'
 
 uci commit system
 
@@ -104,16 +104,6 @@ opkg install kmod-tun
 opkg install kmod-nft-tproxy kmod-nft-socket
 echo -e "${GREEN}Done ! ${NC}"
 
-
->/etc/banner
-
-echo "    ___    __  ___________  __  ______  __________ ___________   __
-   /   |  /  |/  /  _/ __ \/ / / / __ \/ ___/ ___// ____/  _/ | / /
-  / /| | / /|_/ // // /_/ / /_/ / / / /\__ \\__ \ / __/  / //  |/ /
- / ___ |/ /  / // // _  _/ __  / /_/ /___/ /__/ / /____/ // /|  /
-/_/  |_/_/  /_/___/_/ |_/_/ /_/\____//____/____/_____/___/_/ |_/                                                                                                
-telegram : @AmirHosseinTSL" >> /etc/banner
-
 sleep 1
 
 
@@ -130,7 +120,6 @@ echo -e "${GREEN} Passwall.2 Installed Successfully ! ${NC}"
  exit 1
 
 fi
-
 
 DNS=`ls /usr/lib/opkg/info/dnsmasq-full.control`
 
